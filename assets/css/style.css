@@ -1,13 +1,99 @@
-body, html {
+body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     margin: 0;
+    text-align: center;
+  }
+
+  div {
+    background-color: white;
+    text-align: left;
+    margin-block-end: auto;
+    padding-block-end: 5px;
+  }
+  .center {
+    margin: 15px;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 2px solid #44aaaa;
+    padding: 15px;
+    }
+
+    .text-allign {
+      text-align: left;
+    }
+  
+
+  .clearfix {
+    overflow: auto;
+  }
+
+  h2 {
+    text-align: center;
+    float: left;
+    padding: 5px;
+    margin: 0;
+    display: block;
+    font-weight: bold;
+  }
+
+
+  .navbar {
+    background-color: #4aaaa5;
+    overflow: hidden;
+  }
+
+  .navbar a {
+    float: right;
+    color: red;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px
+  }
+  .navbar a:hover {
+    background-color: pink;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: #4aaaa5;
+    color: wheat; 
+  }
+
+  li {
+    float: right;
+    display: -moz-box;
+    padding: 5px
+  }
+
+  header {
+    background: #4aaaa5;
+    padding: 0;
+    margin: 0;
+    border-bottom: #d9e0e0;
+  }
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 15px;
+    color: #4aaaa5;
+    padding-top: 88px;
+    margin-top: 50px;
+
   }
   
   input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    width: 85%;
+    padding: 15px;
+    border: 3px solid #4aaaa5;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
@@ -23,15 +109,6 @@ body, html {
   
   input[type=submit]:hover {
     background-color:#44aaaa;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color:#dddddd;
-    padding: 20px;
-    margin-bottom: 20;
-    width: 1050px;
-    height:auto;
   }
 
 title {
@@ -51,31 +128,22 @@ title {
     clear: both;
   }
 
-  .h1 {
-    border-style: solid;
-    border-color: #44aaaa;
-    margin: auto;
-    background-color: #44aaaa;
-    width: min-content;
-  }
-  
-  .wrapper {
-    min-height: 50%;
-    width: 70%;
-    padding: 70px;
+  .header {
+    background-color: #d9e0e0;
+    border-bottom: 5px solid #44aaaa;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
   }
 
-  .footer,
+
   .push {
     height: 50px;
     background-origin: padding-box;
     color: #44aaaa
   }
-  
-  .container {
-    border-style: solid;
-    color: #4aaaa5
-}
 
 p.blue {
     text-align: center; 
@@ -86,6 +154,7 @@ ul {
     padding: 0;
     margin: 0;
     overflow: auto;
+    float: left;
 }
 
 li {
@@ -101,9 +170,52 @@ li a {
 .footer {
     position: fixed;
     left: 0%;
-    bottom: 0%;
     width: 100%;
-    background-color:red;
-    color: white;
+    bottom: 0%;
     text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
+span {
+  color: #4aaaa5;
+  display: inline;
+}
+.hangman {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  width: 33%;
+}
+
+.rpg {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  float: left;
+
+}
+
+.trivia {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+  width: 33%;
+
+}
+
+.info {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+
+}
+
+.rock {
+  position: relative;
+  margin: 0;
+  padding: 5px;
+
+}
+img {
+  width: 150px;
+  height: 200px;
 }

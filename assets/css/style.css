@@ -5,6 +5,11 @@ body {
     text-align: center;
   }
 
+  p {
+    color: black;
+    text-align: center;
+  }
+
   div {
     background-color: white;
     text-align: left;
@@ -184,6 +189,7 @@ span {
   margin: 0;
   padding: 5px;
   width: 33%;
+  display: inline;
 }
 
 .rpg {
@@ -191,6 +197,7 @@ span {
   margin: 0;
   padding: 5px;
   float: left;
+  width: 33%;
 
 }
 
@@ -206,15 +213,17 @@ span {
   position: relative;
   margin: 0;
   padding: 5px;
+  width: 33%;
 
 }
 
 .rock {
   position: relative;
-  margin: 0;
   padding: 5px;
+  width: 33%;
 
 }
+
 img {
   width: 150px;
   height: 200px;
